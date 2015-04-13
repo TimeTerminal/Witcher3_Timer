@@ -1,20 +1,20 @@
 <html>
 	<head>
 		<title> Witcher 3 Release </title>
-		<link rel="stylesheet" href = "css/flipclock_css.css">
+		<link rel = "stylesheet" href = "css/flipclock_css.css">
 
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
 		<script src="js/flipclock_js.js"></script>	
 	</head>
 	<body>
-		<div class="clock" style="margin:2em;"></div>
+		<div class = "clock" style = "margin: 2em;"></div>
 		
-		<script type="text/javascript">
+		<script type = "text/javascript">
 			var clock;
 
-			$(document).ready(function() {
-
+			$(document).ready(function()
+			{
 				// Grab the current date
 				var currentDate = new Date();
 
@@ -25,12 +25,12 @@
 				var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
 
 				// Instantiate a coutdown FlipClock
-				clock = $('.clock').FlipClock(diff, {
+				clock = $('.clock').FlipClock(diff,
+				{
 					clockFace: 'DailyCounter',
 					countdown: true
 				});
 			});
 		</script>
-		
 	</body>
 </html>
