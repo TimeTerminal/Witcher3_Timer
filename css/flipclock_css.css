@@ -1,5 +1,8 @@
 /* Get the bourbon mixin from http://bourbon.io */
+<<<<<<< HEAD:css/style.css
 #background-color: #333333;
+=======
+>>>>>>> parent of 363b070... Timer_v2.3.8:css/flipclock_css.css
 /* Reset */
 .flip-clock-wrapper * {
     -webkit-box-sizing: border-box;

@@ -1,35 +1,30 @@
 <html>
 	<head>
 		<title> Witcher 3 Release </title>
-		<link rel = "stylesheet" href = "css/style.css">
+		<link rel = "stylesheet" href = "css/flipclock_css.css">
 
-		<script src = "js/Flipclock_functions.js"></script>	
 		<script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
+		<script src = "js/flipclock_js.js"></script>	
 	</head>
 	<body>
 		<div class = "clock" style = "margin: 2em;"></div>
 		
 		<script type = "text/javascript">
 			var clock;
-
-			$(document).ready (function()
+			$(document).ready(function()
 			{
 				// Grab the current date
 				var currentDate = new Date ();
-
 				// Set some date in the future. In this case, it's always Jan 1
 				var futureDate = new Date ("May 19, 2015 12:00 AM EDT");
-
 				// Calculate the difference in seconds between the future and current date
 				var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
-
 				// Calculate day difference and apply class to .clock for extra digit styling.
 				function dayDiff (first, second)
 				{
 					return (second - first) / (1000 * 60 * 60 * 24);
 				}
-
 				if (dayDiff(currentDate, futureDate) < 100)
 				{
 					$('.clock').addClass('twoDayDigits');
@@ -38,12 +33,10 @@
 				{
 					$('.clock').addClass('threeDayDigits');
 				}
-
 				if (diff < 0)
 				{
 					diff = 0;
 				}
-
 				// Instantiate a coutdown FlipClock
 				clock = $('.clock').FlipClock(diff,
 				{
