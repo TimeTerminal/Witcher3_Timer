@@ -1,7 +1,62 @@
 <!DOCTYPE html>
 <html>
+<head>
+	<!--Stylesheet -->
+	<link rel = "stylesheet" href = "css/Muh_CSS_bruhski.css" media = "screen" type = "text/css" />
+
+	<!-- Javascript -->
+	<script type = "text/javascript" src = "js/jquery-2.1.3.min.js" </script>
+	<script type = "text/javascript" src = "js/jquery.lwtCountdown-1.0.js" </script>
+	<script language = "Javascript" type = "text/javascript">
+		jQuery (document).ready (function(){
+			$ ('#countdown_dashboard').coundDown({
+				targetDate: {
+					'day': 19,
+					'month': 05,
+					'year': 2015,
+					'hour': 0,
+					'minute': 0,
+					'second': 0,
+				}
+			});
+		});
+	</script>
+</head>
 <body>
-	<h1> Hello World </h1>
-	<p>I love you Nancy</p>
+	<div id = "countdown_dash">
+		<div id = "date_container">
+			<div class = "weeks_left">
+				<span class = "dash_title">Weeks</span>
+				<div class = "digit">0</div>
+				<div class = "digit">0</div>
+			</div>
+			<div class = "days_left">
+				<span class = "dash_title">Days</span>
+				<div class = "digit">0</div>
+				<div class = "digit">0</div>
+			</div>
+		</div>
+		<!-- Date Container end -->
+		<div id = "time_container">
+			<div class = "hours_left">
+				<span class = "dash_title">Hours</span>
+				<div class = "digit">0</div>
+				<div class = "digit">0</div>
+			</div>
+			<div class = "minutes_left">
+				<span class = "dash_title">Minutes</span>
+				<div class = "digit">0</div>
+				<div class = "digit">0</div>
+			</div>
+			<div class = "seconds_left">
+				<span class = "dash_title">Seconds</span>
+				<div class = "digit">0</div>
+				<div class = "digit">0</div>
+			</div>
+		</div>
+		<!-- Time Container end -->
+	</div>
+	<!-- Countdown end -->
+	<h3> Time Till the Witcher 3 releases </h3>
 </body>
 </html>
