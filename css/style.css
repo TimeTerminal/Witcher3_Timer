@@ -1,4 +1,5 @@
 /* Get the bourbon mixin from http://bourbon.io */
+background-color: #333333;
 /* Reset */
 .flip-clock-wrapper * {
     -webkit-box-sizing: border-box;
